@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Page settings -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Page Title -->
+    {% if page.title %}
+      <title>{{ page.title }}</title>
+    {% else %}
+      <title>dorr.in</title>
+    {% endif %}
+    <link rel="stylesheet" href="{{'/assets/css/styles.css' | prepend: site.baseurl}}">
+  </head>
+  <body class={{ page.theme }}>
+    <div class="background {{ page.background }}"></div>
+    {% include navigation.html %}
+    <div class="footer-flex-wrapper">
+        {{ content }}
+        {% include footer.html %}
+    </div>
+  </body>
+</html>

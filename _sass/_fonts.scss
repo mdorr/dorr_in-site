@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Crimson';
+  src: url(/assets/fonts/crimson/CrimsonText-Regular.tff) format('truetype');
+}
+
+@font-face {
+  font-family: 'Titillium';
+  src: url(/assets/fonts//titillium/TitilliumWeb-Regular.ttf) format('truetype');
+}
+
+body {
+  font-family: 'Titillium', serif !important;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}

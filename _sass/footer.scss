@@ -1,0 +1,8 @@
+// Wrap this around the main page content and the footer.
+// This way, the footer is always at
+.footer-flex-wrapper {
+  display: flex;
+  min-height: 94vh; // remove a bit of vheight for nav
+  flex-direction: column;
+  justify-content: space-between;
+}
