@@ -2,7 +2,7 @@
 // This way, the footer is always at
 .footer-flex-wrapper {
   display: flex;
-  min-height: 94vh; // remove a bit of vheight for nav
+  min-height: 95vh; // remove a bit of vheight for nav
   flex-direction: column;
   justify-content: space-between;
 }

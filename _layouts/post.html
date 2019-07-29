@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="row my-3 justify-content-md-center">
+  <div class="col-lg-6">
+    <h4>{{ page.title }}</h4>
+    <small class="text-muted">
+      Posted by {{ page.author | capitalize }} on {{ page.date | date_to_string }}.
+      Tagged as: {{ page | tags }}
+    </small>
+  </div>
+</div>
+<div class="row my-3 justify-content-md-center">
+  <div class="col-lg-6">
+    <p>{{ content }}</p>
+  </div>
+</div>

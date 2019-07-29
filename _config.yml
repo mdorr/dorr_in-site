@@ -1,7 +1,12 @@
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
 sass:
   load_paths:
     - _sass
     - node_modules
+tag_page_layout: tag_page
+tag_page_dir: tag
 exclude: []
 name: dorr.in
 url: https://dorr.in

@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<h2>Entries tagged as "{{ page.tag }}"</h2>
+<ul class="tag-list">
+{% for post in page.posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <br />
+    <small class="text-muted">Posted on {{ post.date | date_to_string }} by {{ post.author | capitalize }}.</small>
+  </li>
+{% endfor %}
+</ul>
+
+<h2>All tags</h2>
+<div id="tag-cloud">
+  {{ site | tag_cloud }}
+</div>
