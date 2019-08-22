@@ -1,7 +1,7 @@
 ---
 layout: post
 author: maurice
-tags: blog, bootcamp, app academy, georgia tech
+tags: blog bootcamp app-academy georgia-tech
 ---
 A [recent article](https://www.growthmarketingpro.com/best-coding-bootcamps/) compared coding bootcamps, and I was happy to see that [App Academy](https://www.appacademy.io) still ranks at the very top.
 
