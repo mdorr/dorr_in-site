@@ -6,11 +6,15 @@ background: clear
 ---
 <div class="row my-3 justify-content-end">
   {% for post in site.posts limit: 5 %}
-  <div class="col-lg-7 mb-5">
-    {% if forloop.first != true %}
-      <small class="text-muted">{{ post.date | date_to_string }}</small>
-    {% endif %}
+  <div class="col-lg-3 d-none d-lg-block text-lg-right">
     <a class="post-title" href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
+    <small class="text-muted">{{ post.date | date_to_string }}</small>
+  </div>
+  <div class="col-lg-7 mb-5">
+    <div class="d-block d-lg-none">
+      <a class="post-title" href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
+      <small class="text-muted">{{ post.date | date_to_string }}</small>
+    </div>
     {{ post.content }}
   </div>
   <div class="col-lg-2"></div>
